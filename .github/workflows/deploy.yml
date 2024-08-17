@@ -25,5 +25,7 @@ jobs:
                 cd ../client
                 npm ci
                 npm run build
-
+                pm2 restart server
+                pm2 restart client
+                systemctl restart nginx
 
