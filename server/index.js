@@ -14,9 +14,9 @@ app.use(morgan("dev"));
 app.get("/api", (req, res) => {
   res.json({
     message:
-      "Welcome To MERN CI/CD Pipeline with Github Actions, Hello From API",
+      "Welcome To MERN CI/CD Pipeline with Github Actions and Runners, Hello From API",
     purpose:
-      "This is a simple API to demonstrate CI/CD pipeline with Github Actions for a MERN stack application",
+      "This is a simple API to demonstrate CI/CD pipeline with Github Actions and Runners for a MERN stack application",
   });
 });
 
