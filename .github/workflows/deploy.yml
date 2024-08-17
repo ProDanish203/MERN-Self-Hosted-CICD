@@ -20,6 +20,16 @@ jobs:
       - name: Install PM2 globally
         run: npm install -g pm2
 
+      - name: Create server .env file
+        run: |
+          cd server
+          echo "${{ secrets.SERVER_ENV }}" > .env
+
+      - name: Create client .env file
+        run: |
+          cd client
+          echo "${{ secrets.CLIENT_ENV }}" > .env
+
       - name: Install dependencies and build
         run: |
           cd server
