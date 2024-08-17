@@ -31,5 +31,6 @@ jobs:
                 npm run build
                 pm2 restart server
                 pm2 restart client
-                systemctl restart nginx
+            - name: Reload Nginx
+              run: nginx -s reload
 
